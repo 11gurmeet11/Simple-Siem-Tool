@@ -1,0 +1,9 @@
+-- Create the 'logs' table
+CREATE TABLE IF NOT EXISTS logs (
+    id INTEGER PRIMARY KEY,
+    log_message TEXT
+);
+
+-- Insert sample logs to test
+INSERT INTO logs (log_message) VALUES ('ERROR: System failure');
+INSERT INTO logs (log_message) VALUES ('INFO: System running smoothly');
